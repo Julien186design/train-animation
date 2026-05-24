@@ -2,16 +2,16 @@ from train import TrainSimulationConsole, TrainPantographSimulation
 
 
 if __name__ == "__main__":
-    print("Choisissez le mode de simulation:")
-    print("1. Interface graphique (recommandé)")
-    print("2. Mode console")
+    print("Choose the simulation mode:")
+    print("1. Graphical interface (recommended)")
+    print("2. Console mode")
 
-    choice = input("Votre choix (1 ou 2): ").strip()
+    choice = input("Your choice (1 or 2): ").strip()
 
     if choice == "2":
         sim = TrainSimulationConsole()
         sim.run_simulation()
     else:
-        print("Lancement de l'interface graphique...")
+        print("Launching the graphical interface...")
         sim = TrainPantographSimulation()
         sim.run()
